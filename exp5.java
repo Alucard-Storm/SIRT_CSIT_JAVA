@@ -2,48 +2,27 @@
 
 import java.util.Scanner;
 
-class Person {
-    String name;
+class Student {
+    String name, roll_number, branch;
     int age;
 
-    // Constructor for Person class
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Method to display person details
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+    // Display Student details
+    void display()
+    {
+        System.out.println("Student name is "+name);
+        System.out.println("Student age is "+age);
+        System.out.println("Student Roll Number is "+roll_number);
+        System.out.println("Student Branch is "+branch);
     }
 }
 
-class Student extends Person {
-    String roll_no;
-    String branch;
+class StudentDetails extends Student // StudentDeatils inherits class Student
+{
+    Scanner sc = new Scanner(System.in);
 
-    // Constructor for Student class
-    Student(String name, int age, String roll_no, String branch) {
-        super(name, age);
-        this.roll_no = roll_no;
-        this.branch = branch;
-    }
-
-    // Method to display student details
-    void displayDetails() {
-        display();
-        System.out.println("Roll Number: " + roll_no);
-        System.out.println("Branch: " + branch);
-    }
-}
-
-public class exp5 {
-    public static void main(String[] args) {
-        // Create a Scanner object for user input
-        Scanner sc = new Scanner(System.in);
-
-        // Input details
+    // Input Student details
+    void input()
+    {
         String name, roll_no, branch;
         int age;
         System.out.print("Enter name: ");
@@ -55,14 +34,15 @@ public class exp5 {
         roll_no = sc.nextLine();
         System.out.print("Enter Branch: ");
         branch = sc.nextLine();
-
-        // Create Student object and display details
-        Student student = new Student(name, age, roll_no, branch);
-        student.displayDetails();
-
-        // Close the scanner
         sc.close();
     }
+    
 }
 
-/* Here this keyword is used for initilizing the variable from argument  and super keyword is used to call the parent class constructor */
+public class exp5 {
+    public static void main(String[] args) {
+        StudentDetails sd = new StudentDetails();
+        sd.input();
+        sd.display();
+    }
+}
