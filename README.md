@@ -10,5 +10,5 @@
 | 6. | [Write a program to demonstrate package concept](/exp6) |
 | 7. | [Write a program to demonstrate exception handling in case of division by zero](exp7.java) |
 | 8. | [Write a program to demonstrate multithreading](exp8.java) |
-| 9. | [Write a program to display "Hello World" in web browser using applet]() |
-| 10. | [Write a program to create an application using concept of swing]() |
+| 9. | [Write a program to display "Hello World" in web browser using applet](/exp9) |
+| 10. | [Write a program to create an application using concept of swing](exp10.java) |
