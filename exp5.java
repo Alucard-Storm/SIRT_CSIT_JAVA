@@ -23,15 +23,13 @@ class StudentDetails extends Student // StudentDeatils inherits class Student
     // Input Student details
     void input()
     {
-        String name, roll_no, branch;
-        int age;
         System.out.print("Enter name: ");
         name = sc.nextLine();
         System.out.print("Enter age: ");
         age = sc.nextInt();
         sc.nextLine();
         System.out.print("Enter Roll Number: ");
-        roll_no = sc.nextLine();
+        roll_number = sc.nextLine();
         System.out.print("Enter Branch: ");
         branch = sc.nextLine();
         sc.close();
